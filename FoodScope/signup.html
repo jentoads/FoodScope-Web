@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodScope - Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/de886535e1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">
+                <i class="fas fa-magnifying-glass"></i>FoodScope
+            </a>
+            <!-- Add other navbar items as needed -->
+        </div>
+    </nav>
+
+    <!-- Signup Section -->
+    <div id="signup">
+        <div class="signup__container">
+            <h2>Create an Account</h2>
+            <form action="/signup" method="post">
+                <div class="signup__errors">
+                    <!-- Display signup errors here if needed -->
+                </div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; FoodScope 2023. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
